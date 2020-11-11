@@ -60,7 +60,7 @@ module.exports = async (pluginConfig, ctx) => {
     const releaseDate = {
       commits,
       version: sentryReleaseVersion,
-      projects: [project]
+      projects: Array.isArray(project) ? project : [project]
     }
     if (tagsUrl !== '') {
       releaseDate.url = `${tagsUrl}/v${ctx.nextRelease.version}`

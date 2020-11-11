@@ -1,5 +1,5 @@
 {
-  "name": "@eclass/semantic-release-sentry-releases",
+  "name": "@waracle/semantic-release-sentry-releases",
   "version": "2.7.0",
   "description": "semantic-release plugin to create releases in sentry",
   "main": "src/index.js",
